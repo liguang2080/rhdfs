@@ -1,6 +1,6 @@
 require "rhdfs/version"
 
-Dir["jars/*.jar"].map { |jar| require jar }
+Dir[File.expand_path("../jars/*.jar", __FILE__)].each { |jar| require jar }
 
 module Rhdfs
 
