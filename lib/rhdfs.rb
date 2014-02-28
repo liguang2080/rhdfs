@@ -1,5 +1,9 @@
 require "rhdfs/version"
 
+Dir["jars/*.jar"].map { |jar| require jar }
+
 module Rhdfs
-  # Your code goes here...
+
 end
+
+require "rhdfs/client"
